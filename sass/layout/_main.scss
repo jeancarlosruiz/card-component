@@ -1,18 +1,26 @@
 @use "../util" as u;
 
+body {
+  background-color: var(--Cream);
+  display: grid;
+  place-content: center;
+}
+
 .main {
   width: 100%;
-  height: 100vh;
-  background-color: var(--Cream);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   .card {
     width: 90%;
+    max-width: u.rem(600);
+    display: flex;
+    flex-direction: column;
     border-radius: u.rem(20);
     background-color: var(--White);
+    margin: auto;
     overflow: hidden;
+
+    @include u.breakpoint(large) {
+      flex-direction: row;
+    }
 
     &_img {
       width: 100%;
@@ -20,6 +28,11 @@
       background-image: url(../images/image-product-mobile.png);
       background-position: center center;
       background-size: cover;
+
+      @include u.breakpoint(large) {
+        background-image: url(../images/image-product-desktop.png);
+        height: auto;
+      }
     }
 
     &_info {
@@ -32,22 +45,6 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: u.rem(20);
-      }
-
-      .card_button {
-        width: 100%;
-        //ojo con el tama;o al momento del desktop
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: u.rem(11.61);
-        background-color: var(--darkCyan);
-        padding: u.rem(15) 0;
-        border-radius: u.rem(8);
-
-        &::before {
-          content: url(../images/icon-cart.svg);
-        }
       }
     }
   }

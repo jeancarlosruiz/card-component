@@ -1,17 +1,21 @@
 @use "../util" as u;
 
-.form__btn {
-  background-color: var(--btn-color);
+.card_button {
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: u.rem(12);
-  padding: u.em(9) u.em(17);
-  border: none;
-  border-radius: u.rem(5);
-  cursor: pointer;
-  transition: all 0.5 ease-in;
+  gap: u.rem(11.61);
+  background-color: var(--darkCyan);
+  padding: u.rem(15) 0;
+  border-radius: u.rem(8);
+  transition: all 0.2 ease-in;
+
+  &::before {
+    content: url(../images/icon-cart.svg);
+  }
 
   &:hover {
-    background-color: var(--btn-color-hover);
+    background-color: var(--Hover);
   }
 }
