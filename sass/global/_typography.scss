@@ -1,0 +1,13 @@
+@use "../util" as u;
+
+.password-generator__title {
+  font-family: u.$fontKarla;
+  font-size: clamp(u.rem(30), 5vw, u.rem(40));
+  line-height: u.rem(35);
+  letter-spacing: -2.5%;
+  color: var(--title-color);
+
+  @include u.breakpoint(large) {
+    line-height: u.rem(40);
+  }
+}
