@@ -1,13 +1,64 @@
 @use "../util" as u;
 
-.password-generator__title {
-  font-family: u.$fontKarla;
-  font-size: clamp(u.rem(30), 5vw, u.rem(40));
-  line-height: u.rem(35);
-  letter-spacing: -2.5%;
-  color: var(--title-color);
+// .password-generator__title {
+//   font-family: u.$fontKarla;
+//   font-size: clamp(u.rem(30), 5vw, u.rem(40));
+//   line-height: u.rem(35);
+//   letter-spacing: -2.5%;
+//   color: var(--title-color);
 
-  @include u.breakpoint(large) {
-    line-height: u.rem(40);
-  }
+//   @include u.breakpoint(large) {
+//     line-height: u.rem(40);
+//   }
+// }
+
+.card_info-span {
+  font-family: u.$fontMontserrat;
+  font-size: u.rem(12);
+  font-weight: 500;
+  letter-spacing: u.rem(5);
+  color: var(--darkGrayishBlue);
+  text-transform: uppercase;
+}
+
+.card_info-title {
+  font-family: u.$fontFraunces;
+  font-size: u.rem(32);
+  font-weight: 700;
+  line-height: u.rem(32);
+  color: var(--veryDarkBlue);
+  margin-top: u.rem(12);
+  margin-bottom: u.rem(16);
+}
+
+.card_info-paragraph {
+  font-family: u.$fontMontserrat;
+  font-size: u.rem(14);
+  font-weight: 500;
+  line-height: u.rem(23);
+  color: var(--darkGrayishBlue);
+  margin-bottom: u.rem(24);
+}
+
+.card_price-offer {
+  font-family: u.$fontFraunces;
+  font-weight: 700;
+  font-size: u.rem(32);
+  color: var(--darkCyan);
+}
+
+.card_price-discount {
+  font-family: u.$fontMontserrat;
+  font-weight: 500;
+  font-size: u.rem(13);
+  text-decoration-line: line-through;
+  color: var(--darkGrayishBlue);
+}
+
+.card_button {
+  font-family: u.$fontMontserrat;
+  font-weight: 700;
+  font-size: u.rem(14);
+  text-decoration: none;
+  color: var(--White);
 }
