@@ -1,14 +1,10 @@
-// CSS variables
-// :root{
-// --body-bg: #1C1C1C;
-// --main-bg: #1F2937;
-// --title-color: #FFF;
-// --title-span-color: #4ADF86;
-// --paragraph-color: #D5D4D8;
-// --btn-color: #10B981;
-// --btn-color-hover: #69F2C4;
-// --input-color: #273549;
-// --dots-color: #202B3C;
-// --password-color: #55F991;
-// --line-color: #2F3E53;
-// }
+//CSS variables
+:root {
+  --darkCyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  //Neutral
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
