@@ -17,7 +17,7 @@
     &_img {
       width: 100%;
       height: u.rem(240);
-      background-image: url(images/image-product-mobile.jpg);
+      background-image: url(../images/image-product-mobile.jpg);
       background-position: center center;
       background-size: cover;
     }
@@ -46,7 +46,7 @@
         border-radius: u.rem(8);
 
         &::before {
-          content: url(images/icon-cart.svg);
+          content: url(../images/icon-cart.svg);
         }
       }
     }
