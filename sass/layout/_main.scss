@@ -8,6 +8,7 @@ body {
 
 .main {
   width: 100%;
+
   .card {
     width: min(90%, u.rem(600));
     display: grid;
@@ -26,6 +27,7 @@ body {
     .card__img {
       max-width: 100%;
       height: auto;
+      display: block;
     }
 
     &_info {
