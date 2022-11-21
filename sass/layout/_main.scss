@@ -9,30 +9,23 @@ body {
 .main {
   width: 100%;
   .card {
-    width: 90%;
-    max-width: u.rem(600);
-    display: flex;
-    flex-direction: column;
+    width: min(90%, u.rem(600));
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
     border-radius: u.rem(20);
     background-color: var(--White);
     margin: auto;
     overflow: hidden;
 
-    @include u.breakpoint(large) {
-      flex-direction: row;
+    @include u.breakpoint(medium) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
     }
 
-    &_img {
-      width: 100%;
-      height: u.rem(240);
-      background-image: url(../images/image-product-mobile.png);
-      background-position: center center;
-      background-size: cover;
-
-      @include u.breakpoint(large) {
-        background-image: url(../images/image-product-desktop.png);
-        height: auto;
-      }
+    .card__img {
+      max-width: 100%;
+      height: auto;
     }
 
     &_info {
